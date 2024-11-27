@@ -256,13 +256,13 @@ class MainActivity : AppCompatActivity() {
         sb.append("PCI: ${safeGetValue(identity, "getPci")}\n")
         sb.append("PCI: ${safeGetValue(identity, "getTac")}\n")
         sb.append("EARFCN: ${safeGetValue(identity, "getEarfcn")}\n")
+        sb.append("Network Operator: ${safeGetValue(identity, "getMobileNetworkOperator")}\n")
 //        sb.append("Bandwidth: ${safeGetValue(identity, "getBandwidth")} MHz\n")
         sb.append("Signal Strength: ${signal.dbm} dBm\n")
         sb.append("RSRP: ${signal.rsrp} dBm\n")
         sb.append("RSRQ: ${signal.rsrq} dB\n")
         sb.append("SINR: ${signal.rssnr} dB\n")
         sb.append("RSSI: ${signal.rssi} dB \n")
-        sb.append("RPLMN: ${signal}")
     }
 
     private fun append5GInfo(sb: StringBuilder, cellInfo: CellInfoNr) {
@@ -293,6 +293,7 @@ class MainActivity : AppCompatActivity() {
         sb.append("Bandwidth: $bandwidth\n")
         sb.append("PCI: ${safeGetValue(identity, "getPci")}\n")
         sb.append("NRARFCN: ${safeGetValue(identity, "getNrarfcn")}\n")
+        sb.append("Network Operator: ${safeGetValue(identity, "getMobileNetworkOperator")}\n")
         sb.append("SS-RSRP: ${safeGetValue(signal, "getSsRsrp")} dBm\n")
         sb.append("SS-RSRQ: ${safeGetValue(signal, "getSsRsrq")} dB\n")
         sb.append("SS-SINR: ${safeGetValue(signal, "getSsbSinr")} dB\n")
