@@ -254,7 +254,7 @@ class MainActivity : AppCompatActivity() {
         sb.append("Band: $bands\n")
         sb.append("Bandwidth: $bandwidth\n")
         sb.append("PCI: ${safeGetValue(identity, "getPci")}\n")
-        sb.append("PCI: ${safeGetValue(identity, "getTac")}\n")
+        sb.append("TAC: ${safeGetValue(identity, "getTac")}\n")
         sb.append("EARFCN: ${safeGetValue(identity, "getEarfcn")}\n")
         sb.append("Network Operator: ${safeGetValue(identity, "getMobileNetworkOperator")}\n")
 //        sb.append("Bandwidth: ${safeGetValue(identity, "getBandwidth")} MHz\n")
@@ -350,7 +350,9 @@ class MainActivity : AppCompatActivity() {
             this,
             arrayOf(
                 Manifest.permission.READ_PHONE_STATE,
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.ACCESS_NETWORK_STATE
             ),
             1
         )
