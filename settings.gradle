@@ -1,0 +1,2 @@
+project(':build.gradle.kts').projectDir = new File(rootDir, 'Celldata/build.gradle.kts')
+include ':build.gradle.kts'

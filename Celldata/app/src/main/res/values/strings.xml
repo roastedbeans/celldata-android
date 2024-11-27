@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cell Data Monitor</string>
+    <string name="permissions_required">Please grant the required permissions to monitor network data</string>
+    <string name="error_updating_data">Error updating network data</string>
+    <string name="no_data_available">No network data available</string>
+</resources>
